@@ -18,12 +18,13 @@ go mod tidy
 
 Após isso você precisa rodar o comando abaixo para rodar o projeto:
 
+Para compilar o projeto, você precisa rodar o comando abaixo:
 ```bash
-go build main.go
+go build -o meu_programa
 ```
 
 Após isso você precisa executar o executavel que foi gerado, e para isso você precisa executar o comando abaixo:
 
 ```bash
-./main
+./meu_programa
 ```
