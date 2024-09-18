@@ -14,7 +14,7 @@ func main() {
 }
 
 func onReady() {
-	systray.SetIcon(getIcon("/home/administrador/dev/exe-go/golang.png"))
+	systray.SetIcon(getIcon("/home/felipe/dev/go-process/golang.png"))
 	systray.SetTitle("Meu programa Go")
 	systray.SetTooltip("Exemplo de app Go com icone na bandeja do sistema")
 	mQuit := systray.AddMenuItem("Sair", "Sair do programa")
