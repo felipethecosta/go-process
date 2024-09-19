@@ -41,6 +41,17 @@ func onReady() {
 		}
 	}()
 
+
+	// refresh do sistema
+	mRefresh := systray.AddMenuItem("Reiniciar Sistema", "Reinicia o sistema")
+	go func() {
+		for {
+			<-mRefresh.ClickedCh
+			fmt.Println("Reiniciando sistema...")
+		}
+	}()
+
+
 	// notificação
 	mNotify := systray.AddMenuItem("Notificar", "Mostra uma notificação")
 	go func() {
