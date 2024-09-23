@@ -48,9 +48,11 @@ func onReady() {
 		for {
 			<-mRefresh.ClickedCh
 			fmt.Println("Reiniciando sistema...")
+			cmd := exec.Command(os.Args[0])
+			cmd.Start()
+			os.Exit(0)
 		}
 	}()
-
 
 	// notificação
 	mNotify := systray.AddMenuItem("Notificar", "Mostra uma notificação")
