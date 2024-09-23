@@ -39,9 +39,8 @@ func onReady() {
 			// Em cima do Println podemos deixar o comando para abrir o navegador com a url desejada.
 			fmt.Println("Abrindo site...")
 		}
-	}()
-
-
+		}()
+		// api
 	// refresh do sistema
 	mRefresh := systray.AddMenuItem("Reiniciar Sistema", "Reinicia o sistema")
 	go func() {
