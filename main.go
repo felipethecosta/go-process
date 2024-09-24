@@ -15,7 +15,7 @@ import (
 var iconData []byte
 
 func main() {
-	fmt.Println("Hello, World!")
+
 	if iconData == nil {
 		log.Fatal("Erro: Não foi possível carregar o ícone")
 	}
