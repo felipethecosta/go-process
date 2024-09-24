@@ -32,14 +32,14 @@ func onReady() {
 	mQuit := systray.AddMenuItem("Sair", "Sair do programa")
 
 	// https url
-	mOpenWeb := systray.AddMenuItem("Abrir Site", "Abre o site oficial")
-	go func() {
-		for {
-			<-mOpenWeb.ClickedCh
-			// Em cima do Println podemos deixar o comando para abrir o navegador com a url desejada.
-			fmt.Println("Abrindo site...")
-		}
-		}()
+	// mOpenWeb := systray.AddMenuItem("Abrir Site", "Abre o site oficial")
+	// go func() {
+	// 	for {
+	// 		<-mOpenWeb.ClickedCh
+	// 		// Em cima do Println podemos deixar o comando para abrir o navegador com a url desejada.
+	// 		fmt.Println("Abrindo site...")
+	// 	}
+	// 	}()
 
 	// refresh do sistema
 	mRefresh := systray.AddMenuItem("Reiniciar Sistema", "Reinicia o sistema")
