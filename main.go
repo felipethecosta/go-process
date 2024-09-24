@@ -40,7 +40,7 @@ func onReady() {
 			fmt.Println("Abrindo site...")
 		}
 		}()
-		// api
+
 	// refresh do sistema
 	mRefresh := systray.AddMenuItem("Reiniciar Sistema", "Reinicia o sistema")
 	go func() {
