@@ -33,7 +33,7 @@ func onReady() {
 
 
 
-	// refresh do sistema
+	// refresh do sistema //
 	mRefresh := systray.AddMenuItem("Reiniciar Sistema", "Reinicia o sistema")
 	go func() {
 		for {
